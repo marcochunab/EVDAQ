@@ -169,4 +169,4 @@ un cable HDMI, que permite el uso de video digital de alta definición.
 Otra conexión que tiene la placa Raspberry con la pantalla es la alimentación,
 pues mediante un cable USB de 5V el circuito que controla la pantalla energiza al
 ordenador.
-![Conexión EVDAQ](images/EVDAQ_circuito_completo.png)
+![Conexión EVDAQ](EVDAQ_code/images/EVDAQ_circuito_completo.png)
