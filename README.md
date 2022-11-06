@@ -271,3 +271,8 @@ de programación.
 
 Para la puesta en marcha del entorno de de control del EVDAQ se recomienda instalar el entorno de programación
 [Thonny](https://thonny.org/).
+
+Teniendolo ya instalado es necesario instalar en Thonny las siguientes librerias para poder ejecutar de manera correcta 
+El entorno de control:
+
+Teniendo todo instalado unicamente se inicia el archivo ventana_principal.py.
