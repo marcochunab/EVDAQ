@@ -18,6 +18,8 @@ teniendo un error en medición menor al 1 %.
 
 ## Componentes Seleccionados
 
+### Microcontrolador/Microprocesador
+
 El ordenador seleccionado fue Raspberry PI 3B+, permite la creación de un sistema
 de cómputo embebido debido a su micro procesador, con la capacidad de adquirir
 señales sin necesidad de alguna tarjeta DAQ adicional y procesar los datos para las
