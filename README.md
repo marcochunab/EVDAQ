@@ -99,6 +99,7 @@ Las características de la pantalla son:
 - Fuente de energía: DC 12V/1,5A
 - Consumo de energía: 4W
 - Tipo de LCD: IPS
+
 Por su alto nivel de compatibilidad con Raspberry PI, permite que en su estructura se
 pueda comunicar fácilmente. Un puerto HDMI permite compartir multimedia en alta
 definición, también el circuito que controla la pantalla transmite la energía necesaria
