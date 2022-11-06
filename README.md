@@ -170,3 +170,23 @@ Otra conexión que tiene la placa Raspberry con la pantalla es la alimentación,
 pues mediante un cable USB de 5V el circuito que controla la pantalla energiza al
 ordenador.
 ![Conexión EVDAQ](EVDAQ_code/images/EVDAQ_circuito_completo.png)
+
+## Entorno de control
+
+El software de aplicación del sistema de adquisición de datos es el encargado de
+manipular la información obtenida por los sensores de voltaje y corriente, es decir,
+controla la cantidad de datos que se tomará en un determinado intervalo de tiempo,
+también permite visualizar y controlar el proceso de medición. Posteriormente procesa
+y presenta la información de una forma previamente programada.
+
+La aplicación de control fue realizada en el entorno de desarrollo integrado Thonny,
+del sistema operativo Raspbian, utilizando el lenguaje de programación Python. El
+proceso de adquisición de datos empieza con la medición de los variables de voltaje
+y corriente, las condiciones de dichas mediciones se establecieron mediante código de
+programación.
+
+La información obtenida requiere ser visualizada por el usuario del sistema, con el
+objetivo de monitorear que el proceso se está llevando a cabo de una forma adecuada,
+para lo cual se diseñó una aplicación interactiva. Para la creación de ventanas con
+opciones de obtención, análisis y visualización se utilizaron librerías PyQT disponibles
+en el entorno desarrollador.
