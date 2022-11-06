@@ -79,3 +79,27 @@ analógicas y convertirlas en señales digitales.
 Con respecto a la frecuencia de muestreo se tomó en cuenta el Teorema de Nyquist,
 en donde la frecuencia de la señal es de 110 Hz y la frecuencia de muestreo del ADC
 supera el requerimiento de ser por lo menos el doble de la señal.
+
+### Pantalla para Raspberry Pi
+
+Una parte importante del presente proyecto es disminuir el tiempo y la complejidad
+al momento de instalar los equipos de medición, que comúnmente constan un
+sistema DAQ, computador y sus respectivos periféricos de entrada como mouse, teclado
+y una pantalla como periférico de salida. Con estos antecedentes se seleccionó
+una pantalla táctil de la marca SunFounder, que tiene un alto nivel
+de compatibilidad con el ordenador Raspberry.
+La función táctil de la pantalla permite el movimiento y control de aplicaciones
+sin utilizar elementos adicionales, de igual forma con la opción de teclado en pantalla
+ya no es necesario uno físico.
+La pantalla SunFounder de 10.1¨ es un monitor táctil capacitivo de 5 puntos,
+con una resolución de 1280x800, Funciona con varios sistemas operativos incluyendo
+Raspbian, Ubuntu, Ubuntu Mate, Windows, Android.
+Las características de la pantalla son:
+- Resolución: 1280x800
+- Fuente de energía: DC 12V/1,5A
+- Consumo de energía: 4W
+- Tipo de LCD: IPS
+Por su alto nivel de compatibilidad con Raspberry PI, permite que en su estructura se
+pueda comunicar fácilmente. Un puerto HDMI permite compartir multimedia en alta
+definición, también el circuito que controla la pantalla transmite la energía necesaria
+para alimentar la placa Raspberry, mediante un cable USB.
