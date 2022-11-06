@@ -200,5 +200,69 @@ librería utilizada es QMainWindow, proporciona una ventana principal de la apli
 que dispone la aplicación.
 
 El programa se diseñó de tal forma que para el usuario no tenga complicaciones
-a la hora de utilizarlo, su configuración no necesita ser modicado para cada prueba
+a la hora de utilizarlo, su configuración no necesita ser modificado para cada prueba
 de adquisición de datos.
+
+### Evaluación
+
+Es la herramienta más importante en el programa, la ventana en donde se monitorea
+el proceso de medición de voltaje y corriente que entrega la batería sometida a
+una carga de velocidad.
+
+QAction se utiliza para representar cada comando como una acción específica. Se
+pueden agregar acciones a menús y barras de herramientas, y las mantendrán sincronizadas
+automáticamente. En el menú principal se selecciona la opción ¨Evaluation¨.
+
+Una vez dentro de la ventana de evaluación se muestra la opción de ingresar
+el nombre del vehículo o la característica que identique cada prueba a realizarse.
+QpushButton permite otorgar una acción a un botón, en este caso el botón ¨Next¨
+abre la pantalla de monitoreo en tiempo real de la medición de corriente, voltaje y
+potencia eléctrica.
+
+La pantalla de monitoreo tiene dos opciones de botón ¨Start¨ y ¨Stop¨, al pulsar
+¨Start¨ la medición empieza y la gráfica muestra gráficamente el comportamiento de
+los parámetros medidos voltaje (Voltios) y corriente (Amperios), mediante su interacci
+ón también indica la potencia eléctrica, todo en función del tiempo (milisegundos)
+y en la parte inferior despliega valores numéricos correspondientes a las variables.
+Para terminar la prueba en curso se debe presionar el botón ¨Stop¨, inmediatamente
+aparecerá un cuadro de mensaje, informando que los datos de la medición se
+han guardado correctamente.
+
+### Eliminar
+
+Con el objetivo de tener un manejo optimizado de la información almacenada en
+el sistema se diseñó una ventana denominada ¨Eliminate¨´, 
+la cual permite eliminar los datos de una prueba en específico de una base
+de datos.
+
+En la pantalla se muestra una opción que despliega una lista de nombres, los
+cuales corresponden a cada prueba de medición realizada por el sistema. Dependiendo
+de la necesidad se selecciona la prueba que será eliminada y mediante un botón
+¨Eliminate¨ se concreta la acción, inmediatamente en pantalla se muestra un mensaje
+que confirmando que la opción seleccionada fue eliminada correctamente.
+
+### Visualizar
+
+Una opción que destaca en la aplicación es ver las gráficas generadas por los
+parámetros de corriente y voltaje en función del tiempo, de las pruebas almacenadas
+en la base de datos.
+
+La pantalla de ¨Visualize¨ cuenta con dos gráficas
+con una escala automática tanto en el eje X (Corriente y voltaje), como en el eje
+Y (tiempo en milisegundos). Mediante la opción de despliegue de todas las pruebas
+almacenadas, el usuario selecciona la medición que requiere y posteriormente se debe
+presionar el botón ¨Visualize¨.
+
+### Exportar
+
+Para determinar los parámetros de rendimiento del vehículo eléctrico es necesario
+analizar la información obtenida por el sistema de adquisición de datos, por lo cual en
+la aplicación de control se diseñó una ventana denominada ¨Export¨
+que permite al usuario generar un archivo de Microsoft Excel con todos los datos
+recopilados durante la prueba de evaluación.
+
+En la pantalla desplegada aparece una opción que despliega la totalidad de pruebas
+que están almacenadas en el ordenador Raspberry Pi, el usuario selecciona la prueba
+que desea exportar, a continuación, el botón ¨Export¨ programado con una acción
+genera el archivo (.xls) y se guarda en una ubicación previamente definida en el código
+de programación.
