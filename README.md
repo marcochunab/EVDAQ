@@ -166,3 +166,6 @@ touch SunFouder. El proceso de obtención de datos es controlado por
 la aplicación para poder monitorear el proceso el sistema
 utiliza la pantalla SunFounder que se comunica con la placa Raspberry PI mediante
 un cable HDMI, que permite el uso de video digital de alta definición.
+Otra conexión que tiene la placa Raspberry con la pantalla es la alimentación,
+pues mediante un cable USB de 5V el circuito que controla la pantalla energiza al
+ordenador.
