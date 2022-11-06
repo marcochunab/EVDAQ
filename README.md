@@ -50,4 +50,11 @@ A continuación, se detalla todas las características del modelo:
 - Salida de audio estéreo y vídeo compuesto.
 - Micro-SD.
 - Power-over-Ethernet (PoE).
+
+De manera adicional, la tarjeta Raspberry Pi 3B+ ha sido usado en el desarrollo de
+proyectos de medición automotriz, como menciona (2) el micro ordenador es capaz
+de recibir más de una señal, procesarla y presentar resultados favorables con 2% de
+error en las mediciones con respecto a sistemas especializados y de alto costo. Además,
+cuenta con una variedad de puertos de entrada y salida necesarios para un sistema
+de adquisición de datos.
 ## 
