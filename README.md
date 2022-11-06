@@ -266,3 +266,8 @@ que están almacenadas en el ordenador Raspberry Pi, el usuario selecciona la pr
 que desea exportar, a continuación, el botón ¨Export¨ programado con una acción
 genera el archivo (.xls) y se guarda en una ubicación previamente definida en el código
 de programación.
+
+## Puesta en marcha
+
+Para la puesta en marcha del entorno de de control del EVDAQ se recomienda instalar el entorno de programación
+[Thonny](https://thonny.org/).
