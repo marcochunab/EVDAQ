@@ -37,15 +37,15 @@ Ethernet, la toma de auriculares, el conector HDMI, el puerto MicroUSB para la
 alimentación o el ya clásico puerto GPIO.
 A continuación, se detalla todas las características del modelo:
 - CPU + GPU: Broadcom BCM2837B0, Cortex-A53 (ARMv8) 64-bit SoC @1.4GHz.
--RAM: 1GB LPDDR2 SDRAM.
--Wi-Fi + Bluetooth: 2.4GHz y 5GHz IEEE 802.11.b/g/n/ac, Bluetooth 4.2, BLE.
--Ethernet: Gigabit Ethernet sobre USB 2.0 (300 Mbps).
--GPIO de 40 pines.
--HDMI.
--4 puertos USB 2.0.
--Puerto CSI para conectar una cámara.
--Puerto DSI para conectar una pantalla táctil.
--Salida de audio estéreo y vídeo compuesto.
--Micro-SD.
--Power-over-Ethernet (PoE).
+- RAM: 1GB LPDDR2 SDRAM.
+- Wi-Fi + Bluetooth: 2.4GHz y 5GHz IEEE 802.11.b/g/n/ac, Bluetooth 4.2, BLE.
+- Ethernet: Gigabit Ethernet sobre USB 2.0 (300 Mbps).
+- GPIO de 40 pines.
+- HDMI.
+- 4 puertos USB 2.0.
+- Puerto CSI para conectar una cámara.
+- Puerto DSI para conectar una pantalla táctil.
+- Salida de audio estéreo y vídeo compuesto.
+- Micro-SD.
+- Power-over-Ethernet (PoE).
 ## 
