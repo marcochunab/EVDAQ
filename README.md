@@ -104,3 +104,40 @@ Por su alto nivel de compatibilidad con Raspberry PI, permite que en su estructu
 pueda comunicar fácilmente. Un puerto HDMI permite compartir multimedia en alta
 definición, también el circuito que controla la pantalla transmite la energía necesaria
 para alimentar la placa Raspberry, mediante un cable USB.
+
+### Sensor de voltaje
+
+Es un sensor de voltaje Jujie GT-D2U, tiene aislamiento magnético,
+que proporciona una alta tasa de conversión de valores medidos entre 0V a 500 V y
+datos entregados de 0 a 5 Voltios.
+La capacidad de procesamiento y reacción de la placa de circuito son
+elevadas, cuenta con características que protegen el sensor de condiciones de humedad
+y polvo, por lo cual alarga la vida útil de los componentes y mejora la estabilidad en
+las mediciones.
+De acuerdo con las características de este sensor, es importante resaltar el rango de
+medición que va de 0 a 500 voltios, lo que permite ser utilizado en una gama amplia
+de vehículos eléctricos.
+El transformador utiliza el principio de inducción electromagnética, es decir, al
+bobinado primario ingresa el valor medido por el sensor (0V- 500V), se genera un 
+flujo magnético, el cual viaja hasta el bobinado secundario. El movimiento producido
+generará una fuerza magnética en el bobinado secundario, este valor es proporcional
+a la entrada, ahora con una escala que va de 0V a 5V, que entra en el rango permitido
+para ser leído por el convertidor ADC colocado en el ordenador Raspberry PI.
+
+### Sensor de corriente
+
+Es un sensor de corriente de núcleo divido, construido por FuChuang Tech, modelo
+D-C3T. Utiliza el principio de medición de efectoHall. El sensor va montado en el 
+hueco de un núcleo magnético. La salida del sensor se amplifica y mide el campo magnético 
+creado por la corriente sin hacer contacto con ella, lo que produce un aislamiento 
+galvánico entre el circuito y el sensor.
+Para la selección del sensor D-C3T se consideraron varios factores, el principal es
+el rango amplio de medición que ofrece, el cual va de 0A hasta 1000A y que a la salida
+entrega un voltaje de 0V a 5V que es proporcional al valor tomado por el sensor. En
+el cuadro 4.3 se muestran las características principales del sensor de corriente.
+El sensor cuenta con 4 pines de conexión, tal y como se presenta en la gura 4.11,
+los dos primeros de izquierda a derecha son los encargados de alimentar al dispositivo
+utilizando un voltaje de 12V, disponible en la batería del mismo valor que se encuentra
+en el vehículo.
+El pin 3 lleva la información en un valor de voltaje hacia el convertidor analógico/-
+digital, de igual forma el pin 4 (GND) se conecta con el puerto GND del convertidor.
