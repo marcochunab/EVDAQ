@@ -135,9 +135,34 @@ Para la selección del sensor D-C3T se consideraron varios factores, el principa
 el rango amplio de medición que ofrece, el cual va de 0A hasta 1000A y que a la salida
 entrega un voltaje de 0V a 5V que es proporcional al valor tomado por el sensor. En
 el cuadro 4.3 se muestran las características principales del sensor de corriente.
-El sensor cuenta con 4 pines de conexión, tal y como se presenta en la gura 4.11,
-los dos primeros de izquierda a derecha son los encargados de alimentar al dispositivo
-utilizando un voltaje de 12V, disponible en la batería del mismo valor que se encuentra
-en el vehículo.
+El sensor cuenta con 4 pines de conexión, los dos primeros de izquierda a derecha son 
+los encargados de alimentar al dispositivo utilizando un voltaje de 12V, disponible en 
+la batería del mismo valor que se encuentra en el vehículo.
 El pin 3 lleva la información en un valor de voltaje hacia el convertidor analógico/-
 digital, de igual forma el pin 4 (GND) se conecta con el puerto GND del convertidor.
+
+## Integración de componentes
+
+Para el desarrollo del sistema de adquisición de datos se realizó una selección de
+diferentes componentes, los cuales se han descrito anteriormente. Los elementos seleccionados
+cumplen con los requisitos propuestos de forma individual, a continuación,
+se describe la forma de interacción que tienen entre sí, los protocolos de comunicación
+y adaptaciones realizadas.
+El proceso de comunicación empieza entre los sensores de corriente y voltaje con
+el convertidor analógico digital y se nombró Etapa 1
+se describió las características de cada sensor utilizado,
+en donde se específica que el voltaje de alimentación requerido son 12V, por lo cual se
+utilizó la energía que entrega la batería convencional de 12V disponible en la mayoría
+de vehículos. Los sensores recopilan la información de corriente y voltaje, y estos datos
+son enviados al convertidor analógico/digital mediante dos cables flexibles de calibre
+14, uno lleva la información en voltaje de 0V a 5V a una entrada analógica del ADC, la señal del sensor de voltaje se conecta a la entrada AN0 y el sensor de corriente al puerto AN1 y el otro cable de cada uno al
+puerto GND del mismo convertidor.
+Al convertidor llega la información en forma de una señal analógica y entrega una
+señal digital al procesador Raspberry PI, el traslado de datos se da al conectar el ADC
+a los puertos de entrada y salida de propósito general de la placa Raspberry PI, la interacción entre los dos dispositivos se da mediante el protocolo de comunicación I2C. A la unión de dichos elementos se
+denominó Etapa 2.
+La etapa 3 de comunicación se da entre el ordenador Raspberry PI y la pantalla
+touch SunFouder. El proceso de obtención de datos es controlado por
+la aplicación para poder monitorear el proceso el sistema
+utiliza la pantalla SunFounder que se comunica con la placa Raspberry PI mediante
+un cable HDMI, que permite el uso de video digital de alta definición.
