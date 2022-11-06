@@ -7,8 +7,8 @@ Raspberry PI 3b+, que permite la obtención de parámetros de voltaje, corriente
 potencia eléctrica generados por la batería de un vehículo equipado con un motor
 eléctrico. La información obtenida se utiliza para determinar el rendimiento de un
 vehículo eléctrico.
-El procedimiento incluyó la integración de los componentes del sistema, la con-
-guración del software del sistema y el desarrollo del software de adquisición de datos.
+El procedimiento incluyó la integración de los componentes del sistema, la configuración 
+del software del sistema y el desarrollo del software de adquisición de datos.
 El sistema prototipo se probó en condiciones de laboratorio, utilizando un dinamó-
 metro de chasis para la evaluación de consumo energético para cumplir un ciclo de
 conducción NEDC (New European Driving Cycle).
@@ -36,7 +36,7 @@ La placa cuenta con cuatro puertos USB 2.0, el puerto RJ45 para conexiones
 Ethernet, la toma de auriculares, el conector HDMI, el puerto MicroUSB para la
 alimentación o el ya clásico puerto GPIO.
 A continuación, se detalla todas las características del modelo:
--CPU + GPU: Broadcom BCM2837B0, Cortex-A53 (ARMv8) 64-bit SoC @1.4GHz.
+- CPU + GPU: Broadcom BCM2837B0, Cortex-A53 (ARMv8) 64-bit SoC @1.4GHz.
 -RAM: 1GB LPDDR2 SDRAM.
 -Wi-Fi + Bluetooth: 2.4GHz y 5GHz IEEE 802.11.b/g/n/ac, Bluetooth 4.2, BLE.
 -Ethernet: Gigabit Ethernet sobre USB 2.0 (300 Mbps).
