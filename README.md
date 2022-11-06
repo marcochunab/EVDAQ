@@ -57,4 +57,25 @@ de recibir más de una señal, procesarla y presentar resultados favorables con 
 error en las mediciones con respecto a sistemas especializados y de alto costo. Además,
 cuenta con una variedad de puertos de entrada y salida necesarios para un sistema
 de adquisición de datos.
-## 
+
+### Convertidor analógico/digital
+
+Para resolver la limitación de la tarjeta Raspberry Pi para la dquisición de señales
+analógicas se decidió emplear un módulo convertidor analógio/digital externo que no
+requiera adaptaciones adicionales para la conexión con la placa Raspberry, con el objetivo
+de que los componentes del sistema sean compatibles entre si, se escogió el convertidor
+analógico/digital RPi-ADS1115-ADC, fabricado especificamente
+para trabajar en conjunto con la placa Raspberry Pi y en cuestión de programación
+existe una librería en Phyton que permite el control de las entradas analógicas.
+El módulo RPi-ADS1115-ADC es un convertidor de señales analógicas a digitales
+(ADC) de precisión. El chip ADS1115 que proporciona una precisión de muestreo de
+16 bits en un paquete MSOP-10, el mismo valor de resolución tiene el convertidor
+analógico/digital en el sistema de adquisición de datos Sirius Dewesoft, por lo cual es
+una medida sufriente para el sistema EV DAQ.
+Los datos se transmiten a través de la interfaz en serie compatible con el protocolo
+de comunicación I2C C. Tiene 4 direcciones I2C C para elegir y la fuente de
+alimentación que funciona solo necesita 3.3V. Su función principal es detectar señales
+analógicas y convertirlas en señales digitales.
+Con respecto a la frecuencia de muestreo se tomó en cuenta el Teorema de Nyquist,
+en donde la frecuencia de la señal es de 110 Hz y la frecuencia de muestreo del ADC
+supera el requerimiento de ser por lo menos el doble de la señal.
