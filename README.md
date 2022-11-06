@@ -190,3 +190,15 @@ objetivo de monitorear que el proceso se está llevando a cabo de una forma adec
 para lo cual se diseñó una aplicación interactiva. Para la creación de ventanas con
 opciones de obtención, análisis y visualización se utilizaron librerías PyQT disponibles
 en el entorno desarrollador.
+
+### Ventana Principal
+
+La ventana principal es el primer contacto entre el usuario y el
+equipo de medición, por lo cual es importante presentar un ambiente amigable. La
+librería utilizada es QMainWindow, proporciona una ventana principal de la aplicaci
+ón con una barra de menú, una barra de herramientas, que son todas las opciones
+que dispone la aplicación.
+
+El programa se diseñó de tal forma que para el usuario no tenga complicaciones
+a la hora de utilizarlo, su configuración no necesita ser modicado para cada prueba
+de adquisición de datos.
