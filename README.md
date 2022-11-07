@@ -58,6 +58,8 @@ error en las mediciones con respecto a sistemas especializados y de alto costo. 
 cuenta con una variedad de puertos de entrada y salida necesarios para un sistema
 de adquisición de datos.
 
+![Conexión EVDAQ](EVDAQ_code/images/im_1.png)
+
 ### Convertidor analógico/digital
 
 Para resolver la limitación de la tarjeta Raspberry Pi para la dquisición de señales
