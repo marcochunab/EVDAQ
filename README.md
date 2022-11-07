@@ -82,6 +82,8 @@ Con respecto a la frecuencia de muestreo se tomó en cuenta el Teorema de Nyquis
 en donde la frecuencia de la señal es de 110 Hz y la frecuencia de muestreo del ADC
 supera el requerimiento de ser por lo menos el doble de la señal.
 
+![Conexión EVDAQ](EVDAQ_code/images/im_2.png)
+
 ### Pantalla para Raspberry Pi
 
 Una parte importante del presente proyecto es disminuir el tiempo y la complejidad
@@ -107,6 +109,8 @@ pueda comunicar fácilmente. Un puerto HDMI permite compartir multimedia en alta
 definición, también el circuito que controla la pantalla transmite la energía necesaria
 para alimentar la placa Raspberry, mediante un cable USB.
 
+![Conexión EVDAQ](EVDAQ_code/images/im_3.png)
+
 ### Sensor de voltaje
 
 Es un sensor de voltaje Jujie GT-D2U, tiene aislamiento magnético,
@@ -126,6 +130,8 @@ generará una fuerza magnética en el bobinado secundario, este valor es proporc
 a la entrada, ahora con una escala que va de 0V a 5V, que entra en el rango permitido
 para ser leído por el convertidor ADC colocado en el ordenador Raspberry PI.
 
+![Conexión EVDAQ](EVDAQ_code/images/im_4.png)
+
 ### Sensor de corriente
 
 Es un sensor de corriente de núcleo divido, construido por FuChuang Tech, modelo
@@ -142,6 +148,8 @@ los encargados de alimentar al dispositivo utilizando un voltaje de 12V, disponi
 la batería del mismo valor que se encuentra en el vehículo.
 El pin 3 lleva la información en un valor de voltaje hacia el convertidor analógico/-
 digital, de igual forma el pin 4 (GND) se conecta con el puerto GND del convertidor.
+
+![Conexión EVDAQ](EVDAQ_code/images/im_5.png)
 
 ## Integración de componentes
 
